@@ -1,4 +1,4 @@
-package edu.usfca.cs.cs245;
+//package edu.usfca.cs.cs245;
 
 public class BinaryIterativeSearch implements Practice2Search {
 
@@ -15,6 +15,12 @@ public class BinaryIterativeSearch implements Practice2Search {
 		int mid;
 		while (min < max) {
 			mid = (min + max)/2;
+			/*
+			In general you do not need to comment on things that are generally obvious
+			It's good practice to start commenting on your logic, but simple comparisions
+			are easily understood.  More complicated logic that isn't clear at first glance
+			should be commented on though.
+			*/
 			//if they are equal, return mid
 			if (arr[mid] == target) {
 				return mid;
